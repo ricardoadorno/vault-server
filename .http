@@ -1,0 +1,27 @@
+@baseUrl = http://localhost:3000
+### Get All Contents
+GET {{baseUrl}}/contents
+
+### Get Content By Id
+GET {{baseUrl}}/contents/675cb6cb2c17e039bf29d244
+
+### Create Content
+POST {{baseUrl}}/contents
+Content-Type: application/json
+
+{
+    "title": "Hello World",
+    "body": "This is a test content"
+}
+
+### Update Content
+PATCH {{baseUrl}}/contents/675cb6cb2c17e039bf29d244
+Content-Type: application/json
+
+{
+    "title": "Hello World",
+    "body": "This is a test content updated"
+}
+
+### Delete Content
+DELETE {{baseUrl}}/contents/675cb6cb2c17e039bf29d244
